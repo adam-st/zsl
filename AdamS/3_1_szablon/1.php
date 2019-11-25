@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="pl" dir="ltr">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>php</title>
+    <title></title>
   </head>
   <body>

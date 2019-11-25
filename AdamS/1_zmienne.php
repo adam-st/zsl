@@ -2,53 +2,56 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>php</title>
-    <style>
-    body{background-color:#303035;color:#F0F0F0;}
-    </style>
+    <title></title>
   </head>
   <body>
     <?php
+    //wersja php
+      //echo PHP_VERSION
 
     $name = 'Janusz';
-    echo "Twoje imię: $name<br>";
+      echo "Twoje imię: $name<br>";
+      echo "Twoje imię:",$name,'<br>';
+      echo "Twoje imię:".$name.'<br>';
+      echo "Twoje imię: $name",'<br>';
 
-    //systemy liczbowe
-
+      //systemy liczbowe
       $x = 10;
       $hex = 0xA;
-      $oct = 21;
-      $bin = 0b111;
+      $oct = 021;
+      $bin = 0b1011;
 
-      echo $hex;
-      echo $oct;
-      echo $bin, '<hr>';
+      echo $hex; //10
+      echo $oct; //17
+      echo $bin,'<hr>'; //11
 
-      //heredoc
+//heredoc
 
-      $name = 'Anna';
-      $surname = 'Kowal';
+  $name = 'Anna';
+  $surname = 'Kowal';
 
-      echo <<< ETYKIETA
-        imię: $name<br>
-        Nazwisko: $surname<hr>
-ETYKIETA;
-
-$x= <<< ETYKIETA
-  imię: $name<br>
-  Nazwisko: $surname<hr>
+  $x = <<< ETYKIETA
+    Heredoc<br>
+    Imię: $name<br>
+    Nazwisko: $surname<br>
 ETYKIETA;
 
   echo $x;
+//nowdoc
 
-  echo <<< 'E'
-    NowDoc<br>
-    imie: $name<br>
-    nazwisko: $surname<br>
+echo <<< 'E'
+  Nowdoc<br>
+  Imię: $name<br>
+  Nazwisko: $surname<br>
 E;
 
   $x = 20;
-  echo "Nazwa zmiennej: \$x na wartosc $x";
-    ?>
+  echo "Nazwa zmiennej: \$x ma wartość $x";
+
+/*
+  najszybszy heardoc -> .
+*/
+
+     ?>
   </body>
 </html>

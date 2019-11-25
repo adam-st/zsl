@@ -1,4 +1,3 @@
 <?php
-  echo 'Zawartość strony';
-
+  echo "Zawartość strony";
  ?>
