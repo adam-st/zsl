@@ -49,7 +49,7 @@ E;
   echo "Nazwa zmiennej: \$x ma wartość $x";
 
 /*
-  najszybszy heardoc -> .
+  najszybszy heredoc -> .
 */
 
      ?>

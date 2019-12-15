@@ -1,4 +1,5 @@
-<!--Użytkownik podaje w formularzu imie, nazwisko, //wiek i narodowość. Sprawdź czy przesłał wszystkie dane, jeśli tak to wyświetl mu na stronie cookieSuccess.php komunikat przesłany zmienną sesyjną o treści prawidłowo przesłany formularz * Imie i nazwisko przypisz od zmiennych sesyjnych wiek i narodowość przypisz do zmiennej Cookie           
+
+<!--Użytkownik podaje w formularzu imie, nazwisko, wiek i narodowość. Sprawdź czy przesłał wszystkie dane, jeśli tak to wyświetl mu na stronie cookieSuccess.php komunikat przesłany zmienną sesyjną o treści prawidłowo przesłany formularz * Imie i nazwisko przypisz od zmiennych sesyjnych wiek i narodowość przypisz do zmiennej Cookie
 Wyświetl dane na stronie: cookieSuccess.php w formacie:
 Imię i nazwisko:...
 Wiek: ...
