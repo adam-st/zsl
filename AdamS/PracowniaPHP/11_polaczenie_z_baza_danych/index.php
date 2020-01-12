@@ -8,10 +8,13 @@
     <?php
       //skrypt1
       $sql = "SELECT `nazwa` from `towary` where `promocja`=1";
+      //zapytanie skopiowane z bazy
 
       $connect = mysqli_connect("localhost", "root", "", "sklep");
+      //połączenie z bazą danych
 
       $result = mysqli_query($connect, $sql);
+      //wykonanie zapytania
 
       echo "<ul>";
       while ($row = mysqli_fetch_assoc($result))  {
@@ -20,7 +23,7 @@
       echo "</ul>";
 
       mysqli_close($connect);
-
+      //zamkniecie połączenia z bazą
      ?>
 
      <form method="post">
