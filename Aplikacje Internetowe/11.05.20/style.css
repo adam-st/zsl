@@ -1,0 +1,87 @@
+body{
+  margin: 0 auto;
+  background-color: #db8300;
+  background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  color: white;
+  font-size: 20px;
+  font-family: arial;
+}
+#container{
+  margin:0 auto;
+}
+#logo{
+  margin:0px;
+  padding:0px;
+  width: 100%;
+  height: 500px;
+  background-image: url("logo.jpg");
+}
+
+#menu{
+  text-align: center;
+  margin-top:0px;
+  background-color: #ba230f;
+  padding:0px;
+}
+
+#link{
+  display: inline-block;
+  background-color: #ba230f;
+  width:200px;
+  height:30px;
+  text-align: center;
+  margin:0px;
+  padding:10px;
+}
+
+#link:hover{
+  background-color: #a61e0c;
+}
+
+a{
+  color:white;
+  text-decoration: none;
+}
+
+#content{
+  width:100%;
+}
+
+#ad{
+  float:left;
+  background-color: #d6a100;
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  width:15%;
+  height: 1350px;
+  margin:0px;
+  padding:0px;
+}
+
+#subject{
+  text-align: center;
+  float:left;
+  width:60%;
+  margin:5%;
+  padding:0px;
+}
+
+#footer{
+  background-color: #cc8800;
+background-image: url("https://www.transparenttextures.com/patterns/embossed-paper.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+width: 100%;
+height:70px;
+clear: both;
+text-align: center;
+padding-top: 20px;
+}
+img{
+  float:left;
+  border:solid 1px #a61e0c;
+}
+#p1{
+  float:left;
+  text-align: justify;
+}
