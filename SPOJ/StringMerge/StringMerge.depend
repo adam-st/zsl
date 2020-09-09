@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1552169831 source:c:\users\kuczox\desktop\programowanie\spoj\stringmerge\main.cpp
+	<iostream>
+	<cstring>
+	<cstdlib>
+
