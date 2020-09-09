@@ -1,0 +1,23 @@
+body{
+  font-family: Georgia;
+}
+
+.container{
+  background-color: green;
+}
+
+.logo{
+  display: inline-block;
+}
+
+.banner{
+
+}
+
+.main{
+  display: inline-block;
+}
+
+.footer{
+
+}
