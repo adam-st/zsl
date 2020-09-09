@@ -7,17 +7,29 @@ body{
 }
 
 .logo{
-  display: inline-block;
+  float:left;
+  background-color: rgb(197, 85, 160);
+  text-align: center;
+  width: 50%;
+  height: 180px;
 }
 
-.banner{
-
+.banner, .footer{
+  clear: both;
+  background-color: rgb(246, 226, 222);
+  text-align: center;
+  height: 100px;
+  padding: 10px;
 }
 
 .main{
-  display: inline-block;
+  float:left;
+  background-color: RGB(197, 85, 160);
+  color: white;
+  width: 50%;
+  height: 400px;
 }
 
 .footer{
-
+  clear: both;
 }
