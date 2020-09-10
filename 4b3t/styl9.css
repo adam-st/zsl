@@ -1,5 +1,6 @@
 body{
   font-family: Georgia;
+  margin: 0;
 }
 
 .container{
@@ -12,6 +13,13 @@ body{
   text-align: center;
   width: 50%;
   height: 180px;
+}
+
+#ra{
+  background-image: url("cukierki1.png");
+  padding-right: 70px;
+  padding-bottom: 120px;
+  font-size: 150%;
 }
 
 .banner, .footer{
@@ -28,6 +36,17 @@ body{
   color: white;
   width: 50%;
   height: 400px;
+}
+
+table, td{
+  border: 2px solid blue;
+  margin: 20px;
+  padding: 10px;
+}
+
+h2{
+  letter-spacing: 10px;
+  font-size: 200%;
 }
 
 .footer{
