@@ -1,0 +1,206 @@
+#include <iostream>
+#include <vector>
+#include <fstream>
+
+using namespace std;
+struct cars{
+int car_id ;
+string mark;
+int year_car;
+int price ;
+};
+
+struct producer{
+int producer_id;
+string name_prod;
+string nation;
+int year_prod;
+};
+
+struct owner{
+int owner_id ;
+string name_own;
+string surname_own;
+int age;
+};
+
+
+int main()
+{
+
+    cout<<"Do jakiego pliku chcesz dopisac dane(1-cars,2-producer,3-owner): ";
+    int choice;
+    cin>>choice;
+
+    switch(choice){
+
+    case 1:{
+
+        vector <cars> cars_v;
+        cars car;
+        int linie = 0;
+        string linia;
+        ifstream odczyt;
+
+        odczyt.open("cars.txt",ios::in);
+
+        if(odczyt.good() != true) return -1;
+
+        while(!odczyt.eof()){
+            getline(odczyt, linia);
+            linie++;
+        }
+
+        int structures = linie/4;
+
+        odczyt.close();
+        odczyt.open("cars.txt",ios::in);
+
+        for(int j=0; j<structures; j++)
+        {
+            odczyt>>car.car_id;
+            odczyt>>car.mark;
+            odczyt>>car.year_car;
+            odczyt>>car.price;
+            cars_v.push_back(car);
+            cout<<cars_v[j].car_id<<" "<<cars_v[j].mark<<" "<<cars_v[j].year_car<<" "<<cars_v[j].price<<endl;
+        }
+            cout<<endl;
+
+        odczyt.close();
+        ofstream zapis_;
+
+        zapis_.open("cars.txt", ios::app);
+
+        if(zapis_.good() == true)
+        {
+            cin>>car.car_id;
+            cin>>car.mark;
+            cin>>car.year_car;
+            cin>>car.price;
+            zapis_<<car.car_id<<endl;
+            zapis_<<car.mark<<endl;
+            zapis_<<car.year_car<<endl;
+            zapis_<<car.price<<endl;
+
+            cars_v.push_back(car);
+        }
+        zapis_.close();
+
+        break;}
+
+        case 2:{
+        vector <producer> producer_v;
+        producer producer;
+
+        int linie = 0;
+        string linia;
+        ifstream odczyt;
+
+        odczyt.open("producer.txt",ios::in);
+
+        if(odczyt.good() != true) return -1;
+
+        while(!odczyt.eof()){
+            getline(odczyt, linia);
+            linie++;
+        }
+
+        int structures = linie/4;
+
+        cout<<endl;
+        odczyt.close();
+
+        odczyt.open("producer.txt",ios::in);
+
+         for(int j=0; j<structures; j++)
+         {
+            odczyt>>producer.producer_id;
+            odczyt>>producer.name_prod;
+            odczyt>>producer.nation;
+            odczyt>>producer.year_prod;
+            producer_v.push_back(producer);
+            cout<<producer_v[j].producer_id<<" "<<producer_v[j].name_prod<<" "<<producer_v[j].nation<<" "<<producer_v[j].year_prod<<endl;
+         }
+
+        odczyt.close();
+
+        ofstream zapis_;
+        zapis_.open("producer.txt", ios::app);
+
+        if(zapis_.good() == true)
+        {
+            cin>>producer.producer_id;
+            cin>>producer.name_prod;
+            cin>>producer.nation;
+            cin>>producer.year_prod;
+            zapis_<<producer.producer_id<<endl;
+            zapis_<<producer.name_prod<<endl;
+            zapis_<<producer.nation<<endl;
+            zapis_<<producer.year_prod<<endl;
+
+            producer_v.push_back(producer);
+        }
+        zapis_.close();
+
+        break;}
+
+        case 3:{
+        vector <owner> owner_v;
+        owner owner;
+
+        int linie = 0;
+        string linia;
+        ifstream odczyt;
+
+        odczyt.open("owner.txt",ios::in);
+
+        if(odczyt.good() != true) return -1;
+
+        while(!odczyt.eof()){
+           getline(odczyt, linia);
+           linie++;
+        }
+
+        int structures = linie/4;
+
+        cout<<endl;
+        odczyt.close();
+        odczyt.open("owner.txt",ios::in);
+
+        for(int j=0; j<structures; j++)
+        {
+            odczyt>>owner.owner_id;
+            odczyt>>owner.name_own;
+            odczyt>>owner.surname_own;
+            odczyt>>owner.age;
+            owner_v.push_back(owner);
+            cout<<owner_v[j].owner_id<<" "<<owner_v[j].name_own<<" "<<owner_v[j].surname_own<<" "<<owner_v[j].age<<endl;
+        }
+        cout<<endl;
+        odczyt.close();
+
+        ofstream zapis_;
+
+        zapis_.open("owner.txt", ios::app);
+
+        if(zapis_.good() == true)
+        {
+            cin>>owner.owner_id;
+            cin>>owner.name_own;
+            cin>>owner.surname_own;
+            cin>>owner.age;
+            zapis_<<owner.owner_id<<endl;
+            zapis_<<owner.name_own<<endl;
+            zapis_<<owner.surname_own<<endl;
+            zapis_<<owner.age<<endl;
+
+            owner_v.push_back(owner);
+        }
+        zapis_.close();
+
+        break;}
+        }
+
+}
+
